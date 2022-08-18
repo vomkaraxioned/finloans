@@ -244,7 +244,7 @@ header {
 }
 
 nav {
-    width: 57%;
+    width: 100%;
 }
 
 .nav-wrapper {
@@ -254,8 +254,8 @@ nav {
 }
 
 .logo {
-    width: 12%;
-    padding: 15px 21% 0 0;
+    width: 30%;
+    padding-top: 15px;
 }
 
 .logo a {
@@ -264,7 +264,8 @@ nav {
     font-weight: 700;
 }
 
-.logo a::before {
+.logo a::before,
+.logo-link::before {
     padding: 8px;
     border-radius: 50%;
     background-color: #1daeeb;
@@ -275,7 +276,8 @@ nav {
 }
 
 .navigation {
-    width: 100%;
+    flex: 1 100%;
+    flex-shrink: 0;
     display: flex;
 }
 
@@ -307,7 +309,7 @@ nav {
 }
 
 .nav-item:nth-last-child(2) {
-    width: 40%;
+    width: 20%;
     flex-shrink: 0;
 }
 
@@ -340,7 +342,7 @@ nav {
     border: 1px solid #33d4d6;
     border-radius: 7px;
     color: #33d4d6;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -458,7 +460,7 @@ select[name=month] {
     box-shadow: 1px 1px 1px 1px #cdcdcd;
 }
 
-select option {
+select {
     color: #9d989b;
     font-size: 16px;
 }
@@ -478,6 +480,11 @@ input[type=submit] {
     color: #fff;
     font-size: 16px;
     text-align: center;
+}
+
+.information input[type=submit]:hover {
+    border-color: #33d4d6;
+    background-color: #000;
 }
 
 
@@ -516,11 +523,13 @@ input[type=submit] {
     color: #9d989b;
     font-size: 16px;
     font-weight: 600;
+    justify-items: center;
     text-align: center;
 }
 
 .plans-list {
     display: flex;
+    justify-items: center;
 }
 
 .plan {
@@ -547,8 +556,19 @@ input[type=submit] {
 
 .plan-icon::before {
     font-size: 70px;
-    content: '\f66f';
     text-align: center;
+}
+
+.plan:nth-child(1) .plan-icon::before {
+    content: '\f66f';
+}
+
+.plan:nth-child(2) .plan-icon::before {
+    content: '\f1b9';
+}
+
+.plan:nth-child(3) .plan-icon::before {
+    content: '\f02d';
 }
 
 .plan-title {
@@ -673,7 +693,7 @@ input[type=submit] {
 }
 
 .about-btn:hover {
-    border-color: #000;
+    background-color: #000;
 }
 
 
@@ -857,6 +877,7 @@ input[type=submit] {
 }
 
 .controls {
+    width: 15%;
     padding-top: 61px;
     display: flex;
     flex-direction: column;
@@ -916,7 +937,7 @@ input[type=submit] {
 /*apply for loan start here*/
 
 .apply-for-loan {
-    padding: 140px 0;
+    padding: 138px 0;
     margin: 142px 0;
     background: rgba(0, 0, 0, 0.4) url('../images/laptop.jpg') center no-repeat;
     background-blend-mode: multiply;
@@ -932,17 +953,18 @@ input[type=submit] {
     font-size: 42px;
 }
 
-.application-btn {
-    margin-left: 40%;
+.apply-btn-holder {
+    flex: 1;
     flex-shrink: 0;
 }
 
 .apply-loan-btn {
-    padding: 15px 5%;
+    padding: 15px 8.7%;
     border-radius: 5px;
     background-color: #33d4d6;
     color: #fff;
     text-align: center;
+    float: right;
 }
 
 
@@ -955,6 +977,156 @@ input[type=submit] {
   footer styling starts here
 =================================*/
 
+.links {
+    padding-bottom: 163px;
+    display: flex;
+}
+
+.link:first-child,
+.services,
+.useful-links,
+.subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-link span {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.link a:nth-child(2),
+.link a:nth-child(3),
+.link a:nth-child(4) {
+    padding-bottom: 10px;
+    color: #9d989b;
+    font-size: 14px;
+}
+
+.logo-link {
+    padding-bottom: 46px;
+    color: #000;
+    font-size: 21px;
+}
+
+.link {
+    margin-right: 8%;
+    flex-shrink: 0;
+}
+
+.link:last-child {
+    flex: 1;
+    padding: 0;
+    margin-right: 0;
+    flex-shrink: 0;
+}
+
+.link:first-child {
+    margin-right: 18%;
+}
+
+.link-title {
+    padding-bottom: 55px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.link a:hover {
+    color: #33d4d6;
+}
+
+.service {
+    padding-bottom: 30px;
+}
+
+.service a {
+    color: #9d989b;
+    font-size: 12px;
+}
+
+.subscribe-mail {
+    width: 100%;
+    display: flex;
+    border: 1px solid #cdcdcd;
+    justify-items: center;
+}
+
+input[name=subscribe] {
+    width: 100%;
+    padding: 15px 5%;
+    border: transparent;
+}
+
+input[name=subscribe-btn] {
+    padding: 12px 2%;
+    display: inline-block;
+    background-color: #0a8cff;
+    color: #fff;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+input[name=subscribe-btn]:focus {
+    border-color: transparent;
+}
+
+input[name=subscribe-btn]:focus .subscribe-mail {
+    border-color: #000;
+}
+
+input[name=subscribe-btn]:hover {
+    background-color: #000;
+    color: #0a8cff;
+}
+
+.subs-email,
+.subs-btn {
+    flex-shrink: 0;
+    display: flex;
+}
+
+.subs-email {
+    width: 60%;
+}
+
+.subs-btn {
+    flex: 1 100%;
+    padding: 3px 2% 3px 0;
+}
+
+form[name=subscribe] p {
+    padding-top: 26px;
+    color: #9d989b;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.copyright {
+    padding-bottom: 48px;
+    color: #454545;
+    font-size: 16px;
+    text-align: center;
+}
+
+.copyright span {
+    text-indent: -9999px;
+}
+
+.copyright span::before {
+    font-family: 'FontAwesome';
+    font-weight: 900;
+    text-indent: 0;
+    content: '\f004';
+}
+
+.copyright a {
+    color: #098afc;
+}
+
+.copyright a:hover {
+    color: #454545;
+}
+
 
 /*=================================
   footer styling ends here
@@ -966,4 +1138,33 @@ input[type=submit] {
 
 /*media query for 995px starts here*/
 
-@media only screen and (max-width: 995px) {}
+@media only screen and (max-width: 995px) {
+    .logo {
+        width: 35%;
+    }
+    .navigation {
+        flex-wrap: wrap;
+    }
+    .nav-item:nth-last-child(2) {
+        width: 40%;
+    }
+    .nav-item:nth-last-child(2) a {
+        text-align: center;
+    }
+    form[name=contact-form] {
+        width: 80%;
+        background-color: #fff;
+    }
+    .plan {
+        width: 40%;
+    }
+    .about-btn {
+        width: 40%;
+        padding: 15px 3.7%;
+        border-radius: 5px;
+        background-color: #33d4d6;
+        color: #fff;
+        text-align: center;
+        text-transform: capitalize;
+    }
+}
