@@ -224,6 +224,13 @@ li {
     background-color: #fff;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 /*=================================
   Header styling starts here
@@ -611,12 +618,6 @@ input[type=submit] {
     width: 55%;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 .about-us {
     width: 48%;
     padding: 94px 0 86px 0;
@@ -738,6 +739,8 @@ img {
 
 .faq-wrapper figure {
     width: 50%;
+    max-height: 700px;
+    overflow: hidden;
 }
 
 .frequent-question {
@@ -801,6 +804,9 @@ img {
 
 
 /*testimonial end here */
+
+
+/*quotes start here*/
 
 .quotes {
     padding: 148px 0 174px 0;
@@ -884,6 +890,59 @@ img {
 .brands {
     padding-bottom: 32px;
     display: flex;
+}
+
+.brand {
+    margin-right: 5%;
+}
+
+.brand:last-child {
+    margin-right: 0;
+}
+
+.brands figure {
+    max-height: 41px;
+    overflow: hidden;
+}
+
+.brands figure img {
+    object-position: center;
+}
+
+
+/*quotes end here*/
+
+
+/*apply for loan start here*/
+
+.apply-for-loan {
+    padding: 140px 0;
+    margin: 142px 0;
+    background: rgba(0, 0, 0, 0.4) url('../images/laptop.jpg') center no-repeat;
+    background-blend-mode: multiply;
+}
+
+.apply-for-loan .wrapper {
+    display: flex;
+}
+
+.apply-loan-title {
+    width: 70%;
+    color: #fff;
+    font-size: 42px;
+}
+
+.application-btn {
+    margin-left: 40%;
+    flex-shrink: 0;
+}
+
+.apply-loan-btn {
+    padding: 15px 5%;
+    border-radius: 5px;
+    background-color: #33d4d6;
+    color: #fff;
+    text-align: center;
 }
 
 
