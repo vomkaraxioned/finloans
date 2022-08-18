@@ -243,6 +243,10 @@ font-weight: 700;
   background-blend-mode: multiply;
 }
 
+.menu {
+  display: none;
+}
+
 /*banner end here*/
 
 /*information start here*/
