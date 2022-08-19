@@ -858,7 +858,6 @@ input[type=submit] {
 .quotes figure {
     width: 20%;
     border-radius: 50%;
-    position: relative;
     flex-shrink: 0;
 }
 
