@@ -858,6 +858,7 @@ input[type=submit] {
 .quotes figure {
     width: 20%;
     border-radius: 50%;
+    position: relative;
     flex-shrink: 0;
 }
 
@@ -866,7 +867,7 @@ input[type=submit] {
     border-radius: 50%;
     display: inline-block;
     position: absolute;
-    bottom: 0;
+    top: 65%;
     right: 0;
     background-color: #33d4d6;
     color: #fff;
@@ -1160,6 +1161,7 @@ form[name=subscribe] p {
 .social-media {
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-shrink: 0;
 }
 
@@ -1428,6 +1430,7 @@ form[name=subscribe] p {
     .frequent-question {
         width: 100%;
         padding-top: 40px;
+        margin-left: 0;
     }
 
     .faq-title,.qa-title,.answer {
@@ -1435,6 +1438,9 @@ form[name=subscribe] p {
         text-align: center;
     }
 
+    .qas {
+        align-items: center;
+    }
 
     .copyright { width: 100%;}
 
@@ -1445,7 +1451,7 @@ form[name=subscribe] p {
     }
 
     .quotes figure {
-        width: 80%;
+        width: 60%;
     }
 
     .quotes figure::after {
@@ -1493,12 +1499,70 @@ form[name=subscribe] p {
     }
 
     .link {
-        width: 30%;
+        width: 27.5%;
         margin:30px  0;
         text-align: center;
     }
 
-    .link:nth-last-child(1){
-        width: 80%;
+    .link:first-child{
+        width: 40%;
     }
+
+    .link:nth-last-child(1){
+       flex-basis: 40%;
+    }
+
+    form[name=subscribe]{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe-mail {
+        width: 60%;
+    }
+
+    .social:last-child{
+        margin-right: 0;
+    }
+
+    .controls{
+        justify-content: center;
+    }
+}
+
+
+/*media query for 540px starts here*/
+
+@media only screen and (max-width: 540px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    .links { flex-direction: column;}
+
+    .link {
+        margin: 20px 0;
+    }
+
+    .link-title {
+        padding-bottom: 15px;
+    }
+
+    .links { padding-bottom: 50px;}
+
+    .link {
+        width: 100%;
+    }
+
+}
+
+/*media query for 425px starts here*/
+
+@media only screen and (max-width: 425px){
+    .form-title ,.choose-us-title{
+        text-align: center;
+    }
+
+    .apply-loan-title { text-align: left;}
 }
