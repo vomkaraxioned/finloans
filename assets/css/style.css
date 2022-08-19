@@ -298,12 +298,30 @@ nav {
     text-transform: capitalize;
 }
 
+.nav-item:nth-child(4),
+.nav-item:nth-child(5) {
+   position: relative;
+}
+
 .nav-item:nth-child(4) a::after,
 .nav-item:nth-child(5) a::after {
+    padding-left: 10%;
     color: #fff;
     font-family: 'FontAwesome';
     font-weight: 900;
+    font-size: 10px;
     content: '\f107';
+}
+
+.nav-item:nth-child(4) a:first-child::after,
+.nav-item:nth-child(5) a:first-child:hover::after{
+    content: '\f106';
+}
+
+.nav-item:nth-child(4):hover .pages,
+.nav-item:nth-child(5):hover .blogs{
+    display: flex;
+    z-index: -1;
 }
 
 .nav-item:nth-last-child(4) a {
@@ -356,6 +374,7 @@ nav {
 .blogs,
 .pages {
     display: none;
+    flex-direction: column;
 }
 
 .nav-item a:hover {
@@ -836,8 +855,10 @@ input[type=submit] {
 }
 
 .quotes figure {
-    width: 40%;
+    width: 20%;
+    border-radius: 50%;
     position: relative;
+    flex-shrink: 0;
 }
 
 .quotes figure::after {
