@@ -410,9 +410,9 @@ nav {
     background-blend-mode: multiply;
 }
 
-.menu {
-    display: none;
-}
+.menu {   display: none;}
+
+.menu:hover { color: #33d4d6;}
 
 
 /*banner end here*/
@@ -483,8 +483,16 @@ select[name=month] {
 }
 
 select {
+  padding: 0 5%;
+    background:url('../images/darrow.png') right no-repeat;
+    background-size: 20px;
     color: #9d989b;
     font-size: 16px;
+}
+
+select:focus {
+  background: url('../images/uparrow.png') right no-repeat;
+  background-size: 20px;
 }
 
 .pay {
