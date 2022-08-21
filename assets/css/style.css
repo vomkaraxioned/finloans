@@ -1238,13 +1238,7 @@ form[name=subscribe] p {
         flex-wrap: wrap;
     }
 
-    /* .nav-item:first-child {
-      border-left:.2px solid #fff;
-    }
-
-    .nav-item:nth-last-child(3) {
-      border-right:.2px solid #fff;
-    } */
+    .nav-item:first-child,.nav-item:nth-last-child(3) { position: relative;}
 
     .nav-item {
       margin-right: 2%;
