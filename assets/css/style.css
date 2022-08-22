@@ -277,7 +277,7 @@ nav {
 }
 
 .navigation {
-    flex: 1 ;
+    flex: 1;
     flex-shrink: 0;
     display: flex;
     flex-grow: 1;
@@ -301,7 +301,7 @@ nav {
 .nav-item:nth-child(4),
 .nav-item:nth-child(5) {
     width: 7%;
-   margin-right: 2%;
+    margin-right: 2%;
 }
 
 .nav-item:nth-child(4) a::after,
@@ -315,12 +315,12 @@ nav {
 }
 
 .nav-item:nth-child(4) a:first-child::after,
-.nav-item:nth-child(5) a:first-child:hover::after{
+.nav-item:nth-child(5) a:first-child:hover::after {
     content: '\f106';
 }
 
 .nav-item:nth-child(4):hover .pages,
-.nav-item:nth-child(5):hover .blogs{
+.nav-item:nth-child(5):hover .blogs {
     display: flex;
     z-index: -1;
 }
@@ -348,9 +348,8 @@ nav {
     content: '\f095';
 }
 
-
 .nav-item:nth-last-child(1) {
-  width: 17%;
+    width: 17%;
     padding: 0;
     margin: 0;
     flex-shrink: 0;
@@ -410,9 +409,13 @@ nav {
     background-blend-mode: multiply;
 }
 
-.menu {   display: none;}
+.menu {
+    display: none;
+}
 
-.menu:hover { color: #33d4d6;}
+.menu:hover {
+    color: #33d4d6;
+}
 
 
 /*banner end here*/
@@ -483,16 +486,16 @@ select[name=month] {
 }
 
 select {
-  padding: 0 5%;
-    background:url('../images/darrow.png') right no-repeat;
+    padding: 0 5%;
+    background: url('../images/darrow.png') right no-repeat;
     background-size: 20px;
     color: #9d989b;
     font-size: 16px;
 }
 
 select:focus {
-  background: url('../images/uparrow.png') right no-repeat;
-  background-size: 20px;
+    background: url('../images/uparrow.png') right no-repeat;
+    background-size: 20px;
 }
 
 .pay {
@@ -928,7 +931,8 @@ input[type=submit] {
     text-indent: -9999px;
 }
 
-.control:nth-child(1):hover::after,.control:nth-child(2):hover::after{
+.control:nth-child(1):hover::after,
+.control:nth-child(2):hover::after {
     color: #000;
 }
 
@@ -1146,7 +1150,7 @@ form[name=subscribe] p {
 }
 
 .copyright span {
-  display: inline-block;
+    display: inline-block;
     text-indent: -9999px;
 }
 
@@ -1197,20 +1201,24 @@ form[name=subscribe] p {
     float: right;
 }
 
-.social:nth-child(1) a::before{
+.social:nth-child(1) a::before {
     content: '\f39e';
 }
 
-.social:nth-child(2) a::before{
+.social:nth-child(2) a::before {
     content: '\f0d5';
 }
 
-.social:nth-child(3) a::before{
+.social:nth-child(3) a::before {
     content: '\f099';
 }
 
-.social:nth-child(4) a::before{
+.social:nth-child(4) a::before {
     content: '\f16d';
+}
+
+.social a:hover::before {
+    color: #33d4d6;
 }
 
 
@@ -1225,53 +1233,35 @@ form[name=subscribe] p {
 /*media query for 995px starts here*/
 
 @media only screen and (max-width: 995px) {
-
-  .nav-wrapper{
-    width: 99%;
-  }
-
+    .nav-wrapper {
+        width: 99%;
+    }
     .logo {
         width: 21%;
     }
-
     .navigation {
         flex-wrap: wrap;
     }
-
-    /* .nav-item:first-child {
-      border-left:.2px solid #fff;
-    }
-
-    .nav-item:nth-last-child(3) {
-      border-right:.2px solid #fff;
-    } */
-
     .nav-item {
-      margin-right: 2%;
+        margin-right: 2%;
     }
-
     .nav-item:nth-last-child(2) {
         width: 21%;
         margin: 0 1%;
     }
-
     .nav-item:nth-last-child(2) a {
         text-align: center;
     }
-
-    .nav-item:nth-last-child(1){
-      width: 20%;
+    .nav-item:nth-last-child(1) {
+        width: 20%;
     }
-
     form[name=contact-form] {
         width: 80%;
         background-color: #fff;
     }
-
     .plan {
         width: 40%;
     }
-
     .about-btn {
         width: 40%;
         padding: 15px 3.7%;
@@ -1281,42 +1271,35 @@ form[name=subscribe] p {
         text-align: center;
         text-transform: capitalize;
     }
-
     .subscribe-mail {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-
     .link:last-child {
-      flex: 1;
-      padding: 0;
-      margin-right: 0;
-      flex-shrink: 0;
-  }
-  
-  .link:first-child {
-      margin-right: 5%;
-  }
-
-  .subs-email {
-    width: 100%;
+        flex: 1;
+        padding: 0;
+        margin-right: 0;
+        flex-shrink: 0;
+    }
+    .link:first-child {
+        margin-right: 5%;
+    }
+    .subs-email {
+        width: 100%;
+    }
+    .subs-btn {
+        padding: 3px 2%
+    }
+    .about-us {
+        padding: 0;
+    }
+    .frequent-question {
+        padding: 0;
+    }
+    .faq-title {
+        padding-bottom: 20px;
+    }
 }
 
-  .subs-btn {
-    padding: 3px 2% 
-  }
-
-  .about-us {
-    padding: 0;
-  }
-
-  .frequent-question {
-    padding: 0;
-  }
-
-  .faq-title {
-    padding-bottom: 20px;
-  }
-}
 
 /*media query for 768px starts here*/
 
@@ -1325,11 +1308,9 @@ form[name=subscribe] p {
         width: 50%;
         padding-top: 0;
     }
-
-    .navigation{
+    .navigation {
         display: none;
     }
-
     .menu {
         padding-right: 5%;
         display: block;
@@ -1339,64 +1320,53 @@ form[name=subscribe] p {
         font-weight: 900;
         text-indent: -9999px;
     }
-
     .menu::before {
         text-indent: 0;
         float: right;
         content: '\f0c9';
     }
-
     .information {
         flex-direction: column;
-       align-items: center;
+        align-items: center;
     }
-
     .how-it-works {
         padding: 40px 0;
         margin: 0;
         text-align: center;
     }
-
-    
     .how-it-works h2 {
         width: 100%;
         text-align: center;
     }
-
-    form[name=contact-form]{
+    form[name=contact-form] {
         width: 100%;
         padding: 10px 5%;
     }
-
     .plans {
         padding: 80px 0;
     }
-
     .plans-list {
         flex-direction: column;
         align-items: center;
     }
-
     .plan {
         width: 100%;
     }
-
-    .plan:nth-child(2){
+    .plan:nth-child(2) {
         margin: 40px 0;
     }
-
     .why-choose-us {
         padding-bottom: 80px;
         flex-direction: column;
         align-items: center;
     }
-
-    .why-choose-us figure,.about-us {
+    .why-choose-us figure,
+    .about-us {
         width: 100%;
         padding: 10px 0;
     }
-
-    .feature ,.features {
+    .feature,
+    .features {
         width: 100%;
         align-items: center;
     }
@@ -1404,137 +1374,111 @@ form[name=subscribe] p {
         margin: 0;
         align-items: center;
     }
-
     .about-us p {
         text-align: center;
     }
-
     .steps {
         flex-direction: column;
         align-items: center;
     }
-
     .step {
         width: 100%;
     }
-
-    .step:nth-child(2){
+    .step:nth-child(2) {
         margin: 40px 0;
     }
-
     .how-it-works {
-        padding:0 0 80px 0;
+        padding: 0 0 80px 0;
     }
-
     .faq-wrapper {
         flex-direction: column;
         align-items: center;
     }
-
     .faq-wrapper figure {
         width: 100%;
     }
-
     .frequent-question {
         width: 100%;
         padding-top: 40px;
         margin-left: 0;
     }
-
-    .faq-title,.qa-title,.answer {
+    .faq-title,
+    .qa-title,
+    .answer {
         width: 100%;
         text-align: center;
     }
-
     .qas {
         align-items: center;
     }
-
-    .copyright { width: 100%;}
-
+    .copyright {
+        width: 100%;
+    }
     .quotes {
         padding: 80px 0;
         flex-direction: column;
         align-items: center;
     }
-
     .quotes figure {
         width: 60%;
     }
-
     .quotes figure::after {
         right: 20px;
     }
-
     .controls {
         flex-direction: row;
     }
-
     .control:nth-child(1) {
-       justify-self: flex-end;
+        justify-self: flex-end;
     }
-
     .qas {
         align-items: center;
     }
-
     .qa {
         width: 80%;
         align-items: center;
     }
-
-   .brands {
-    flex-direction: column;
-    align-items: center;
-   }
-
-   .brand {
-    width: 40%;
-    margin: 20px 0;
-   }
-
-    .apply-btn-holder a{
+    .brands {
+        flex-direction: column;
+        align-items: center;
+    }
+    .brand {
+        width: 40%;
+        margin: 20px 0;
+    }
+    .apply-btn-holder a {
         margin: 40px 0;
     }
-
     .apply-loan-title {
         text-align: center;
     }
-
     .links {
-       flex-wrap: wrap;
-       align-items: center;
+        flex-wrap: wrap;
+        align-items: center;
     }
-
     .link {
         width: 27.5%;
-        margin:30px  0;
+        margin: 30px 0;
         text-align: center;
     }
-
-    .link:first-child{
+    .link:first-child {
         width: 40%;
     }
-
-    .link:nth-last-child(1){
-       flex-basis: 40%;
+    .link:nth-last-child(1) {
+        flex-basis: 40%;
     }
-
-    form[name=subscribe]{
+    form[name=subscribe] {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .subscribe-mail {
         width: 60%;
     }
-
-    .social:last-child{
+    .social:last-child {
         margin-right: 0;
     }
-
-    .controls{
+    .controls {
         justify-content: center;
     }
 }
@@ -1546,31 +1490,32 @@ form[name=subscribe] p {
     .wrapper {
         width: 85%;
     }
-
-    .links { flex-direction: column;}
-
+    .links {
+        flex-direction: column;
+    }
     .link {
         margin: 20px 0;
     }
-
     .link-title {
         padding-bottom: 15px;
     }
-
-    .links { padding-bottom: 50px;}
-
+    .links {
+        padding-bottom: 50px;
+    }
     .link {
         width: 100%;
     }
-
 }
+
 
 /*media query for 425px starts here*/
 
-@media only screen and (max-width: 425px){
-    .form-title ,.choose-us-title{
+@media only screen and (max-width: 425px) {
+    .form-title,
+    .choose-us-title {
         text-align: center;
     }
-
-    .apply-loan-title { text-align: left;}
+    .apply-loan-title {
+        text-align: left;
+    }
 }
