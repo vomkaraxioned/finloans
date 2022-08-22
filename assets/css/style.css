@@ -1242,6 +1242,7 @@ form[name=subscribe] p {
     .navigation {
         flex-wrap: wrap;
     }
+<<<<<<< HEAD
     /* .nav-item:first-child {
       border-left:.2px solid #fff;
     }
@@ -1249,6 +1250,11 @@ form[name=subscribe] p {
     .nav-item:nth-last-child(3) {
       border-right:.2px solid #fff;
     } */
+=======
+
+    .nav-item:first-child,.nav-item:nth-last-child(3) { position: relative;}
+
+>>>>>>> d611b5a50d7cc12c771fb5abc123d9fa4f009245
     .nav-item {
         margin-right: 2%;
     }
