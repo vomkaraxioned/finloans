@@ -304,8 +304,8 @@ nav {
     margin-right: 2%;
 }
 
-.nav-item:nth-child(4) a::after,
-.nav-item:nth-child(5) a::after {
+.arrow:after,
+.arrow::after {
     padding-left: 10%;
     color: #fff;
     font-family: 'FontAwesome';
@@ -314,8 +314,8 @@ nav {
     content: '\f107';
 }
 
-.nav-item:nth-child(4) a:first-child::after,
-.nav-item:nth-child(5)a:first-child:hover::after {
+.arrow:hover::after,
+.arrow:hover::after {
     content: '\f106';
 }
 
